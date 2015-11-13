@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <form action="/registration-complete.html" method="GET">
+        <label class="primary" for="login">Login:</label>
+        <input type="text" id="login" name="account_login"><br>
+
+        <label class="primary" for="password">Password:</label>
+        <input type="password" id="password" name="account_password"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="account_email"><br>
+
+        <label for="subscribe">Subscribe for email notifications:</label>
+        <input type="checkbox" id="subscribe" name="send_notifications"><br>
+
+        <label>Account type:</label>
+        <label for="account_trial">Trial</label>
+        <input id="account_trial" type="radio" value="trial" name="account_type">
+
+        <label for="account_prepaid">Prepaid</label>
+        <input id="account_prepaid" type="radio" value="prepaid" name="account_type"><br>
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="account_country">
+            <option value="US">United States</option>
+            <option value="DE">Germany</option>
+            <option value="UA">Ukraine</option>
+        </select>
+
+        <button type="submit">Register</button>
+
+        <!-- <input type="submit" value="Register"> has the same behaviour -->
+    </form>
+</body>
+</html>
