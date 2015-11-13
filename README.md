@@ -12,16 +12,16 @@
  - Launch python -m http.server from the project root to set up static server
  - Create index.html in your project root using following snippet:
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title><!-- the title of your page goes here --></title>
-        <!-- often, css and javascript files are linked here via <link> and <script> html elements -->
-    </head>
-    <body>
-        <!-- the content of your page goes here -->
-    </body>
-    </html>
+```<!DOCTYPE html>
+<html>
+<head>
+    <title><!-- the title of your page goes here --></title>
+    <!-- often, css and javascript files are linked here via <link> and <script> html elements -->
+</head>
+<body>
+    <!-- the content of your page goes here -->
+</body>
+</html>```
 
 5) Go to `http://localhost:8000` or `http://localhost:8000/index.html` to check if everything works fine
 
