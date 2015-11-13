@@ -14,11 +14,11 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <title>/* the title of your page goes here */</title>
-        /* often, css and javascript files are linked here via <link> and <script> html elements */
+        <title><!-- the title of your page goes here --></title>
+        <!-- often, css and javascript files are linked here via <link> and <script> html elements -->
     </head>
     <body>
-        /* the content of your page goes here */
+        <!-- the content of your page goes here -->
     </body>
     </html>
 
