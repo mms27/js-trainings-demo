@@ -11,6 +11,7 @@
  - Create sandbox project
  - Launch python -m http.server from the project root to set up static server
  - Create index.html in your project root using following snippet:
+
     <!DOCTYPE html>
     <html>
     <head>
