@@ -6,3 +6,15 @@ label {
 label.primary {
     font-weight: bold;
 }
+
+.form-element {
+    margin: 5px;
+}
+
+.form-element:first-child {
+    margin-top: 0;
+}
+
+.prepaid-star {
+    height: 25px;
+}

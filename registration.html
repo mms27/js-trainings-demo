@@ -5,37 +5,56 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <form action="/registration-complete.html" method="GET">
-        <label class="primary" for="login">Login:</label>
-        <input type="text" id="login" name="account_login"><br>
+    <form id="registration-form" action="/registration-complete.html" method="GET">
+        <div class="form-element">
+            <label class="primary" for="login">Login:</label>
+            <input type="text" id="login" name="account_login">
+        </div>
 
-        <label class="primary" for="password">Password:</label>
-        <input type="password" id="password" name="account_password"><br>
+        <div class="form-element">
+            <label class="primary" for="password">Password:</label>
+            <input type="password" id="password" name="account_password">
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="account_email"><br>
+        <div class="form-element">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="account_email"><br>
+        </div>
 
-        <label for="subscribe">Subscribe for email notifications:</label>
-        <input type="checkbox" id="subscribe" name="send_notifications"><br>
+        <div class="form-element">
+            <label for="subscribe">Subscribe for email notifications:</label>
+            <input type="checkbox" id="subscribe" name="send_notifications">
+        </div>
 
-        <label>Account type:</label>
-        <label for="account_trial">Trial</label>
-        <input id="account_trial" type="radio" value="trial" name="account_type">
+        <div class="form-element">
+            <label>Account type:</label>
+            <label for="account_trial">Trial</label>
+            <input id="account_trial" class="account_radiobutton" type="radio" value="trial" name="account_type">
 
-        <label for="account_prepaid">Prepaid</label>
-        <input id="account_prepaid" type="radio" value="prepaid" name="account_type"><br>
+            <label for="account_prepaid">Prepaid</label>
+            <input  id="account_prepaid" checked class="4" type="radio" value="prepaid" name="account_type">
+            <img src="/img/star.png" class="prepaid-star" id="prepaid-star">
+        </div>
 
+        <div class="form-element">
+            <div id="account_number_container">
+                <label for="account_number">Account number:</label>
+                <input type="text" id="account_number">
+            </div>
+        </div>
 
-        <label for="country">Country:</label>
-        <select id="country" name="account_country">
-            <option value="US">United States</option>
-            <option value="DE">Germany</option>
-            <option value="UA">Ukraine</option>
-        </select>
+        <div class="form-element">
+            <label for="country">Country:</label>
+            <select id="country" name="account_country">
+                <option value="US">United States</option>
+                <option value="DE">Germany</option>
+                <option value="UA">Ukraine</option>
+            </select>
+        </div>
 
         <button type="submit">Register</button>
-
         <!-- <input type="submit" value="Register"> has the same behaviour -->
     </form>
+    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>
