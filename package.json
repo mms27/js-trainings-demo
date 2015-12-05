@@ -1,0 +1,8 @@
+{
+    "name": "js-trainings",
+    "dependencies": {
+        "express": "3.x",
+        "serve-static": "1.x",
+        "morgan": "1.x"
+    }
+}
