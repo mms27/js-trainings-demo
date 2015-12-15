@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Demo</title>
+    <script src="/vendor/angular/angular.js"></script>
+</head>
+<body ng-app="angular-demo">
+    <!-- alt to <user-component>  -->
+    <div ng-controller="UserCtrl as userCtrl">
+        <!-- UserCtrl - name of registered controller constructor -->
+        <!-- userCtrl - name of INSTANCE, can be anything: ctrl, viewModel, vm etc. -->
+        {{ userCtrl.userName }}
+        <input type="text" ng-model="userCtrl.userName">
+        <button ng-click="hello()">Yo</button>
+        <button ng-click="userCtrl.hello()">Hello</button>
+        <button ng-click="userCtrl.changeName()">Change Name</button>
+        <button my-whatever my-on-click="userCtrl.hello()">Hello Again</button>
+    </div>
+
+    <script>
+        // function UserCtrl() {/*...*/}
+        // app.directive('userComponent', function () {
+        //     return {
+        //         restrict: 'E',
+        //         controller: UserCtrl,
+        //         controllerAs: 'userCtrl'
+        //     }
+        // });
+    </script>
+    <script src="/js/angular-demo.js"></script>
+</body>
+</html>

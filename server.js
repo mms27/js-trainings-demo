@@ -5,7 +5,7 @@ var morgan = require('morgan');
 var app = express();
 
 app.use(morgan('dev'));
-app.use(serveStatic(__dirname));
+app.use(serveStatic(__dirname + '/public'));
 
 app.use('/users', function (req, res) {
     res.json([123, 234]);
